@@ -168,7 +168,7 @@ $id = (int) $_GET['id'];
                     $classCount = $xml->faculty[$id]->classes->class->count();
                     if ($classCount !=0){
                     ?>
-                    <p><strong>Current Classes</strong></p>
+                    <p><strong>Organizations supported:</strong></p>
 
                   <ul>
                       <?php 

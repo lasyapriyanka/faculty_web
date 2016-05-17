@@ -60,7 +60,8 @@ $id = (int) $_GET['id'];
     {
         background-color: #578BB8;
         margin-top: 0px;
-        padding-top:0px;
+        padding-top:
+        0px;
     }
       
     img 
@@ -87,6 +88,7 @@ $id = (int) $_GET['id'];
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+
   <body>
 <div class="container">
     <div >
@@ -101,11 +103,18 @@ $id = (int) $_GET['id'];
 		<ul class="list-inline">
             <li class="orangeNav noborder">  </li>
 			<li class="orangeNav"><a class="orange"href="<?php echo $_SERVER['PHP_SELF'] . "?id=".$id ."&p=1"?>">Home</a></li>
-                        <li class="orangeNav"><a class="orange" href="<?php echo $_SERVER['PHP_SELF'] . "?id=".$id ."&p=2"?>">Research</a></li>
-                        <li class="orangeNav"><a class="orange"href="<?php echo $_SERVER['PHP_SELF'] . "?id=".$id ."&p=3"?>">Publications</a></li>
+                        <li class="orangeNav"><a class="orange" href="<?php echo $_SERVER['PHP_SELF'] . "?id=".$id ."&p=2"?>">Experience</a>
+                        <ul>
+<li><a href="programmes.html">Programmes</a></li>
+<li><a href="curriculum.html">Curriculum</a></li>
+<li><a href="time_table.html">Time Table</a></li>
+</ul>
+</li>
+                        <li class="orangeNav"><a class="orange"href="<?php echo $_SERVER['PHP_SELF'] . "?id=".$id ."&p=3"?>">Research Projects</a></li>
                         
-                        <li class="orangeNav"><a class="orange"href="<?php echo $_SERVER['PHP_SELF'] . "?id=".$id ."&p=4"?>">Teaching</a></li>
-                        <li class="orangeNav"><a class="orange"href="<?php echo $_SERVER['PHP_SELF'] . "?id=".$id ."&p=5"?>">Background</a></li>
+                        <li class="orangeNav"><a class="orange"href="<?php echo $_SERVER['PHP_SELF'] . "?id=".$id ."&p=4"?>">Collaborators</a></li>
+                        <li class="orangeNav"><a class="orange"href="<?php echo $_SERVER['PHP_SELF'] . "?id=".$id ."&p=5"?>">Publications</a></li>
+                        <li class="orangeNav"><a class="orange"href="<?php echo $_SERVER['PHP_SELF'] . "?id=".$id ."&p=5"?>">Students</a></li>
             
        
 
@@ -234,101 +243,8 @@ $id = (int) $_GET['id'];
       
     <?php } //end of page 1 
       
-      
-       if ($_GET['p']==2) { ?>
-      
-      <div class="col-xs-12 bg-success">
-          
-         <?php 
-                $researchSection = $xml->faculty[$id]->research->count(); 
-                if ($researchSection != 0)
-                {
-                    $projectCount = $xml->faculty[$id]->research->project->count();
-                    if ($projectCount != 0)
-                    {
-                    ?>
-                    <strong><h4>Research Projects</h4></strong>
 
-                  <ul>
-                      <?php 
-                        for ($i=0; $i < $projectCount; $i++)
-                        {  ?>
-                        <li><?php echo $xml->faculty[$id]->research->project[$i]; ?></li>
-                        <br/>
-                        <?php 
-                        } ?>
-                 </ul> <?php }
-                }?> 
-    </div>
-      
-    <?php }  //end of page 2 - research 
-      
-
-      
-             if ($_GET['p']==3) { ?>
-      
-      <div class="col-xs-12 bg-success">
-          
-           <?php 
-                $publicationSection = $xml->faculty[$id]->publications->count(); 
-                
-                
-                if (($publicationSection != 0))
-                {
-                    
-                    $articleCount = $xml->faculty[$id]->publications->article->count();
-                    if ($articleCount !=0){
-                    ?>
-                    <strong><h4>Publications and Papers</h4></strong>
-
-                  <ul>
-                      <?php 
-                        for ($i=0; $i < $articleCount; $i++)
-                        {  ?>
-                        
-                        <li><?php echo $xml->faculty[$id]->publications->article[$i]; ?></li>
-                        <br/>
-                        <?php 
-                        } ?>
-                 </ul> <?php }
-                }?>
-    </div>
-      
-    <?php }  //end of page 3 publications
-      
-      
-      if ($_GET['p']==4) { ?>
-      
-      <div class="col-xs-12 bg-success">
-          
-                        <?php 
-                $classesSection = $xml->faculty[$id]->classes->count(); 
-                
-                
-                if (($classesSection != 0))
-                {
-                    
-                    $classCount = $xml->faculty[$id]->classes->class->count();
-                    if ($classCount !=0){
-                    ?>
-                    <p><strong><h4>Current Classes</h4></strong></p>
-
-                  <ul>
-                      <?php 
-                        for ($i=0; $i < $classCount; $i++)
-                        {  ?>
-                      
-                        <li><?php echo $xml->faculty[$id]->classes->class[$i]; ?></li>
-                        <br/>
-                        <?php 
-                        } ?>
-                 </ul> <?php }
-                }?>
-    </div>
-      
-    <?php }  //end of page 4 - classes 
-      
-         if ($_GET['p']==5) { ?>
+         if ($_GET['p']==2) { ?>
       
       <div class="col-xs-12 bg-success">
           
@@ -357,8 +273,197 @@ $id = (int) $_GET['id'];
                 }?>
     </div>
       
-    <?php }  //end of page 5 - background/education 
+    <?php }  //end of page 2 - Experience 
       
+      
+      
+       
+
+
+
+      
+       if ($_GET['p']==3) { ?>
+      
+      <div class="col-xs-12 bg-success">
+          
+         <?php 
+                $researchSection = $xml->faculty[$id]->research->count(); 
+                if ($researchSection != 0)
+                {
+                    $projectCount = $xml->faculty[$id]->research->project->count();
+                    if ($projectCount != 0)
+                    {
+                    ?>
+                    <strong><h4>Research Projects</h4></strong>
+
+                  <ul>
+                      <?php 
+                        for ($i=0; $i < $projectCount; $i++)
+                        {  ?>
+                        <li><?php echo $xml->faculty[$id]->research->project[$i]; ?></li>
+                        <br/>
+                        <?php 
+                        } ?>
+                 </ul> <?php }
+                }?> 
+    </div>
+      
+    <?php }  //end of page 3 - research projects
+      
+
+            
+      
+      if ($_GET['p']==4) { ?>
+      
+      <div class="col-xs-12 bg-success">
+          <?php 
+       if (($xml->faculty[$id]->collaboration->count() !=0))
+                {
+                 if ($xml->faculty[$id]->collaboration->section->count()!=0)
+                 {
+                     $sectionCount = $xml->faculty[$id]->collaboration->section->count();
+                    for ($i=0; $i<$sectionCount; $i++) //for each section that exists
+                    {
+                        if ($xml->faculty[$id]->collaboration->section[$i]->items->item->count()!=0)
+                        {
+                            
+                            $itemCount = $xml->faculty[$id]->collaboration->section[$i]->items->item->count();
+                            
+                             ?>
+                                <p><strong><?php echo $xml->faculty[$id]->collaboration->section[$i]->name; ?></strong></p>
+                                <ul>
+                            <?php
+                            
+                                for ($q=0; $q<$itemCount; $q++)
+                                        {
+                                    
+                                           ?><li><?php echo $xml->faculty[$id]->collaboration->section[$i]->items->item[$q]; ?></li><br/><?php                
+                                       }
+                            ?>
+                                </ul>
+                            <?php
+                        }
+       
+                    }                
+                 }
+       }
+                    
+                ?>
+      
+      
+      
+      
+      <?php 
+       if (($xml->faculty[$id]->collaboration1->count() !=0))
+                {
+                 if ($xml->faculty[$id]->collaboration1->section->count()!=0)
+                 {
+                     $sectionCount = $xml->faculty[$id]->collaboration1->section->count();
+                    for ($i=0; $i<$sectionCount; $i++) //for each section that exists
+                    {
+                        if ($xml->faculty[$id]->collaboration1->section[$i]->items->item->count()!=0)
+                        {
+                            
+                            $itemCount = $xml->faculty[$id]->collaboration1->section[$i]->items->item->count();
+                            
+                             ?>
+                                <p><strong><?php echo $xml->faculty[$id]->collaboration1->section[$i]->name; ?></strong></p>
+                                <ul>
+                            <?php
+                            
+                                for ($q=0; $q<$itemCount; $q++)
+                                        {
+                                    
+                                           ?><li><?php echo $xml->faculty[$id]->collaboration1->section[$i]->items->item[$q]; ?></li><br/><?php                
+                                       }
+                            ?>
+                                </ul>
+                            <?php
+                        }
+       
+                    }                
+                 }
+       }
+                    
+                ?>
+      
+      
+      
+      
+      <?php 
+       if (($xml->faculty[$id]->collaboration2->count() !=0))
+                {
+                 if ($xml->faculty[$id]->collaboration2->section->count()!=0)
+                 {
+                     $sectionCount = $xml->faculty[$id]->collaboration2->section->count();
+                    for ($i=0; $i<$sectionCount; $i++) //for each section that exists
+                    {
+                        if ($xml->faculty[$id]->collaboration2->section[$i]->items->item->count()!=0)
+                        {
+                            
+                            $itemCount = $xml->faculty[$id]->collaboration2->section[$i]->items->item->count();
+                            
+                             ?>
+                                <p><strong><?php echo $xml->faculty[$id]->collaboration2->section[$i]->name; ?></strong></p>
+                                <ul>
+                            <?php
+                            
+                                for ($q=0; $q<$itemCount; $q++)
+                                        {
+                                    
+                                           ?><li><?php echo $xml->faculty[$id]->collaboration2->section[$i]->items->item[$q]; ?></li><br/><?php                
+                                       }
+                            ?>
+                                </ul>
+                            <?php
+                        }
+       
+                    }                
+                 }
+       }
+                    
+                ?>
+      
+      
+    </div>
+      
+    <?php }  //end of page 4 - collaborators
+
+
+
+             if ($_GET['p']==5) { ?>
+    
+      <div class="col-xs-12 bg-success">
+          
+           <?php 
+                $publicationSection = $xml->faculty[$id]->publications->count(); 
+                
+                
+                if (($publicationSection != 0))
+                {
+                    
+                    $articleCount = $xml->faculty[$id]->publications->article->count();
+                    if ($articleCount !=0){
+                    ?>
+                    <strong><h4>Publications and Papers</h4></strong>
+
+                  <ul>
+                      <?php 
+                        for ($i=0; $i < $articleCount; $i++)
+                        {  ?>
+                        
+                        <li><?php echo $xml->faculty[$id]->publications->article[$i]; ?></li>
+                        <br/>
+                        <?php 
+                        } ?>
+                 </ul> <?php }
+                }?>
+    </div>
+      
+    <?php }  //end of page 5 publications
+
+
+
       
       
       ?>  

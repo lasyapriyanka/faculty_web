@@ -1,3 +1,123 @@
-<?xml version="1.0" encoding="utf-8"?>
-<facultyPages>     
-<faculty id="Jacob"><fullname>Mr. Jacob Smith, M.S.</fullname><email>Jacob@university.edu</email><username>Jacob</username><password>password</password><profilepic>http://www.paymystudentloans.com/wp-content/uploads/2012/09/Loan-Forgiveness-For-Teachers.jpg</profilepic><position>Associate Professor of Electrical Engineering and Computer Science</position><university>Harvard-MIT Division of Health Sciences and Technology</university><phone>2816365871</phone><fax>(983) 713-8478</fax><ta>Jared Yates, John Logan</ta><taEmail>helper@hardvard.edu</taEmail><officeLoc>77 Massachusetts Avenue, Room 36-766, Cambridge, MA 02139</officeLoc><officeHrs>9:30-10:30 am</officeHrs><bio>Maecenas in imperdiet justo. Donec varius tempor nulla at iaculis. Curabitur sit amet maximus augue, a imperdiet massa. Nulla non tortor libero. Nullam ultrices lectus a lacus malesuada elementum. Vivamus tempor mauris eu massa varius faucibus non ac justo. Pellentesque a nulla pretium, ornare est eu, feugiat ante. Nunc sollicitudin et arcu venenatis condimentum. Nullam id nisl enim. Duis maximus pharetra venenatis. Mauris vel arcu sodales velit faucibus aliquet. Fusce dui sapien, faucibus eget turpis non, hendrerit fringilla ante. Aliquam mollis sapien eu lacinia venenatis. Donec sit amet felis id arcu lacinia hendrerit at vel orci.</bio><welcome>Maecenas in imperdiet justo. Donec varius tempor nulla at iaculis. Curabitur sit amet maximus augue, a imperdiet massa. Nulla non tortor libero. Nullam ultrices lectus a lacus malesuada elementum. Vivamus tempor mauris eu massa varius faucibus non ac justo. Pellentesque a nulla pretium, ornare est eu, feugiat ante. Nunc sollicitudin et arcu venenatis condimentum. Nullam id nisl enim. Duis maximus pharetra venenatis. Mauris vel arcu sodales velit faucibus aliquet. Fusce dui sapien, faucibus eget turpis non, hendrerit fringilla ante. Aliquam mollis sapien eu lacinia venenatis. Donec sit amet felis id arcu lacinia hendrerit at vel orci.</welcome><template>2</template><research><project>Pellentesque ac egestas neque. Vestibulum non orci varius lacus commodo blandit nec et nunc. Donec a dui urna. Nam at vehicula massa. Donec mollis lacus placerat commodo lobortis. Morbi a nisl eget felis elementum viverra ac eget leo. Pellentesque lectus sem, dictum id est at, blandit volutpat ipsum. </project><project>Pellentesque ac egestas neque. Vestibulum non orci varius lacus commodo blandit nec et nunc. Donec a dui urna. Nam at vehicula massa. Donec mollis lacus placerat commodo lobortis. Morbi a nisl eget felis elementum viverra ac eget leo. Pellentesque lectus sem, dictum id est at, blandit volutpat ipsum. </project><project>Pellentesque ac egestas neque. Vestibulum non orci varius lacus commodo blandit nec et nunc. Donec a dui urna. Nam at vehicula massa. Donec mollis lacus placerat commodo lobortis. Morbi a nisl eget felis elementum viverra ac eget leo. Pellentesque lectus sem, dictum id est at, blandit volutpat ipsum. </project></research><publications><article>Quisque pharetra et elit id ornare. Praesent maximus felis quis sapien venenatis ultrices. Aliquam porttitor risus metus, nec feugiat ipsum convallis quis.</article><article>Quisque pharetra et elit id ornare. Praesent maximus felis quis sapien venenatis ultrices. Aliquam porttitor risus metus, nec feugiat ipsum convallis quis.</article></publications><education><credential>Bachelors of Science in Biochemistry</credential><credential>Masters in Engineering</credential><credential>Ph.D. in BioChemistry</credential><credential>Professional Assocation of Computer scientists</credential><credential>APAA Member</credential><credential>Dean of Students, University of School</credential><credential>Associate Researcher at St. Luke Research </credential><credential>Nobel Prize Winner in Physiology</credential><credential>Peer Reviewer for Computer Science Journal</credential><credential>OOOP Member</credential></education><classes><class>Introduction to Programming</class><class>Advanced Aquatic Studies</class></classes><customSections><section><name>Hobbies</name><items><item>Football</item><item>Flying Kites</item><item>Dancing</item><item>Cooking</item></items></section></customSections></faculty></facultyPages>
+<?xml version="1.0" encoding="UTF-8"?>
+<facultyPages>
+   <faculty id="Hrishi">
+      <fullname>Dr. Hrishikesh Venkataraman Ph.D. (Jacobs University Bremen, Germany)</fullname>
+      <email>hrishikesh.v.raman@gmail.com 
+hvraman@iiits.in</email>
+      <username>Jacob</username>
+      <password>password</password>
+      <profilepic>http://file.scirp.org/image/201209020428531131.jpg</profilepic>
+      <position>Coordinator for Industry relations;  Faculty Incharge for Networks, Server and Information Systems at IIIT Chittoor, Sricity</position>
+      <university />
+      <phone>+91-7387804865</phone>
+      <fax>(983) 713-8478</fax>
+      <ta>Jared Yates, John Logan</ta>
+      <taEmail></taEmail>
+      <officeLoc>Indian Institute of Information Technology Chittoor, C/O IFMR, 5655 chennai central way, Satyavedu mandal, Chittoor District, Sricity, Andhra pradesh.</officeLoc>
+      <officeHrs>9:30 am - 6:00 pm</officeHrs>
+      <bio>Dr. Hrishikesh V Raman currently works as an experienced faculty, in-charge of Networks, Server, Information Systems with the Center for Smart Cities (CSC), the first-of-its kind research center in the newly established MHRD sponsored Indian Institute of Information Technology (IIIT), Sricity, Chittoor District, India.
+
+Prior to joining CSC, IIIT Sricity, Dr. H.V Raman worked as a Technical Architect in the CTO office, Network Technology Unit of Tech Mahindra, India for 2 years. Here, he was involved in developing algorithms, building solutions and contributing to ETSI-based consortium in the area of virtualization. 
+
+Previously, Dr H V Raman has been a Principal Investigator and Research Fellow with the Irish national research center - The RINCE Institute, in Dublin City University (DCU), Ireland. Notably, he has also served as Project Manager and has been the Research Investigator of three projects, two of them funded by Enterprise Ireland, while the third one is funded by Indo-Irish research initiative.</bio>
+      <welcome>Actively looking for a PhD candidate in the area of 'Signal Processing and Wireless Communications' in collaboration with IIIT Hyderabad. Being from a sponsored project, Registration Fees and Stipend would be covered.
+Research Student would have an option of spending time at either Hyderabad or Sricity (Chennai)</welcome>
+      <template>2</template>
+      <research>
+         <project>1.Networking and communication aspect for Smart Cities</project>
+         <project>2.Cellular to WiFi, Small Cells, C-RAN</project>
+         <project>3.Vehicular communication and networks</project>
+         <project>4.Analytics based recommender system</project>
+         <project>If any motivated student is interested in working with me (for Master's, PhD or as Research Associates), please mail me at the following address. </project>
+
+      </research>
+
+      <publications>
+         <article>1. "Moving Cluster Architecture and Intelligent Resource Reuse Protocol for Vehicular Networks", ACM Wireless Networks, Nov'13 </article>
+         <article>2."MBE: A Model based Achievable Bandwidth Estimation for 802.11 Data Transmissions", IEEE Transactions on Vehicular Technology, June'12</article>
+      </publications>
+      <education>
+         <credential>1.Tech-Venture Startup@INVENT DCU, Ireland Entrepreneurship, DCU INVENT
+                     2011 – 2011
+                     Activities and Societies: Technology Transfer, Market Research, SWOT Analysis, Targeting Venture Capitalist, Project Management
+         </credential>
+         <credential>2.Jacobs University Bremen
+                     PhD, Cellular and Wireless Communications
+                     2004 – 2007
+         </credential>
+         <credential>3.Technische Universität Dresden
+             				 DAAD Scholarship, Mobile Communications
+										 2003 – 2004
+										 Activities and Societies: Indo-German DAAD Scholarship for doing Master's Thesis at the Vodafone Chair for Mobile Communications, TU-Dresden, Germany; under Prof. Gerhard Fettweis.
+         </credential>
+         <credential>4.Indian Institute of Technology, Kanpur
+                     M.Tech, Communications Systems
+                     2002 – 2004
+         </credential>
+         <credential>5.University of Mumbai
+                     B.E, Electronics and Tele-Communications
+                     1997 – 2001
+         </credential>
+        
+      </education>
+     <collaboration>
+         <section>
+            <name>Academic Collaborators</name>
+            <items>
+               <item>IRISA-INRIA Research Labs, University of Rennes1, France. </item>
+               <item>Steinbeis Research Institute, University of Offenburg, Germany.</item>
+               <item>ISEP, Paris, France.</item>
+               <item>CEU University, Madrid, Spain.</item>
+               <item>Indian Institute of Technology (IIT) Delhi, India.</item>
+               <item>DHBW Heidenheim, Germany.</item>
+            </items>
+         </section>
+      </collaboration>
+
+      <collaboration1>
+         <section>
+            <name>Industrial Partners</name>
+            <items>
+               <item>Labs Marconi, Bologna, Italy.</item>
+               <item>Everseen, Cork, Ireland.</item>
+               <item>IBM Research Labs, New Delhi, India</item>
+            </items>
+         </section>
+      </collaboration1>
+       
+
+       <collaboration2>
+         <section>
+            <name>Visiting Research Positions</name>
+            <items>
+               <item>Indian Institute of Technology (IIT) Delhi, India (November 2011).</item>
+               <item>IRISA - INRIA, University of Rennes1, France (June 2011).</item>
+               <item>Steinbeis Research Institute (May 2011).</item>
+               <item>University of Washington, Seattle, USA (October 2010).</item>
+               <item>ISEP, Paris, France (May 2010).</item>
+               <item>University of Edinburgh, Scotland, UK (Nov'07 - Dec'07).</item>
+            </items>
+         </section>
+      </collaboration2>
+
+      <classes>
+         <class>Eco-Mobility</class>
+         <class>Jasper Wireless</class>
+         <class>Sony Ericsson</class>
+         <class>Nokia Mobile Phones</class>
+         <class>Mobile Messenger</class>
+      </classes>
+      <customSections>
+         <section>
+            <name>Interests</name>
+            <items>
+               <item>multimedia transmission</item>
+               <item>Cognitive radio</item>
+               <item>multimedia transmission</item>
+            </items>
+         </section>
+      </customSections>
+   </faculty>
+</facultyPages>
+
+
