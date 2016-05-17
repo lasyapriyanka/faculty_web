@@ -7,7 +7,8 @@ hvraman@iiits.in</email>
       <username>Jacob</username>
       <password>password</password>
       <profilepic>http://file.scirp.org/image/201209020428531131.jpg</profilepic>
-      <position>Coordinator for Industry relations;  Faculty Incharge for Networks, Server and Information Systems at IIIT Chittoor, Sricity</position>
+      <position>Coordinator for Industry relations;
+         Faculty Incharge for Networks, Server and Information Systems at IIIT Chittoor, Sricity</position>
       <university />
       <phone>+91-7387804865</phone>
       <fax>(983) 713-8478</fax>
@@ -23,7 +24,9 @@ Previously, Dr H V Raman has been a Principal Investigator and Research Fellow w
       <welcome>Actively looking for a PhD candidate in the area of 'Signal Processing and Wireless Communications' in collaboration with IIIT Hyderabad. Being from a sponsored project, Registration Fees and Stipend would be covered.
 Research Student would have an option of spending time at either Hyderabad or Sricity (Chennai)</welcome>
       <template>2</template>
+      
       <research>
+        
          <project>1.Networking and communication aspect for Smart Cities</project>
          <project>2.Cellular to WiFi, Small Cells, C-RAN</project>
          <project>3.Vehicular communication and networks</project>
@@ -31,11 +34,19 @@ Research Student would have an option of spending time at either Hyderabad or Sr
          <project>If any motivated student is interested in working with me (for Master's, PhD or as Research Associates), please mail me at the following address. </project>
 
       </research>
+      
+      <news>
+       <project> Dr. H.V. Raman has strong interests in the development of networking and communication aspect for Smart Cities, especially LTE, Cellular to Wi-Fi, Networking, Vehicular Communications and Analytics based Recommender Systems
 
+If any motivated student is interested in working with me (for Master's, PhD or as Research Associates), please mail me at the following address.
+ </project>
+
+      </news>
       <publications>
          <article>1. "Moving Cluster Architecture and Intelligent Resource Reuse Protocol for Vehicular Networks", ACM Wireless Networks, Nov'13 </article>
          <article>2."MBE: A Model based Achievable Bandwidth Estimation for 802.11 Data Transmissions", IEEE Transactions on Vehicular Technology, June'12</article>
       </publications>
+     
       <education>
          <credential>1.Tech-Venture Startup@INVENT DCU, Ireland Entrepreneurship, DCU INVENT
                      2011 – 2011
@@ -60,6 +71,7 @@ Research Student would have an option of spending time at either Hyderabad or Sr
          </credential>
         
       </education>
+     
      <collaboration>
          <section>
             <name>Academic Collaborators</name>
@@ -100,6 +112,84 @@ Research Student would have an option of spending time at either Hyderabad or Sr
          </section>
       </collaboration2>
 
+       <student>
+         <section>
+            <name>PhD Co-Supervision (in DCU, Ireland)</name>
+            <items>
+               <item> Mr. Zhenhui Yuan </item>
+               <item> Mr. Martin Kennedy (Expected completion date: June'15).</item>
+            </items>
+         </section>
+      </student>
+
+      <student1>
+         <section>
+            <name>Master's Supervision (in DCU, Ireland):</name>
+            <items>
+            <item>Mr. Adrien D'Ussel (Aug'09)</item>
+            <item>Mr. Thomas Corre (Aug'09)</item>
+            <item>Mr. Romain Delcelier (Aug'11, exchange student from ETSEHT, France)</item>
+            <item>Mr. Sheng Wang (expected, Aug'12)</item>
+         </items>
+      </section>
+      </student1>
+
+
+      <student2>
+         <section>
+            <name>Internship Supervision (in DCU):</name>
+            <items>
+            <item>Ms. Shruti Agrawal (Aug'09)</item>
+            <item>Mr. Kevin O'Flynn (Aug'09)</item>
+            <item>Mr. Christophe Leble (Aug'10)</item>
+            <item>Mr. Amit Sharma (Aug'10)</item>
+          </items>
+      </section>
+      </student2>
+
+
+      <student3>
+         <section>
+            <name>Final Year Under-Graduate Supervision (in DAIICT, India)</name>
+            <items>
+            <item>Mr. Pradeep Jaini (May'08)</item>
+            <item>Mr. Pratik Srivastava (May'08)</item>
+            <item>Mr. Shashank Nainawal (May'08)</item>
+            <item>Mr. Segu Revanth (May'08)</item>
+            <item>Mr. Poornachand Kalyampudi (May'09, distant supervision with assistance of a co-supervisor</item>
+           </items>
+         </section>
+      </student3>
+
+<student4>
+   <section>
+      <name>Internship Supervision (in DAIICT, India):</name>
+      <items>
+      <item>Ms. Aneesha Chowdhury (Aug'08)</item>
+      <item>Ms. Anupriya Tyagi (Aug'08)</item>
+      <item>Mr. Atul Purohit/Ms. Ritika Pareek (Aug'08)</item>
+      <item>Mr. Akshay Soni/Ms. Tanvi Sharma (Aug'08)</item>
+      <item>Mr. Poornachand Kalyampudi (Aug'08)</item>
+      <item>Mr. Vishav Vikram Kapoor (Aug'08)</item>
+      <item>Mr. Ankit Maheshwari (Aug'09)</item>
+      </items>
+   </section>
+</student4>
+
+
+<student5>
+   <section>
+      <name>Under-Graduate Co-Supervision (in Jacobs University Bremen, Germany)</name>
+      <items>
+      <item>Mr. Bhirendra Ghimire (Aug'05)</item>
+      <item>Mr. Dimitar Popov (Aug'05)</item>
+      <item>Ms. Elina Foutekova (Aug'05)</item>
+      <item>Mr. Patrick Agyapong (Aug'05)</item>
+      </items>
+   </section>
+</student5>
+     
+
       <classes>
          <class>Eco-Mobility</class>
          <class>Jasper Wireless</class>
@@ -107,13 +197,15 @@ Research Student would have an option of spending time at either Hyderabad or Sr
          <class>Nokia Mobile Phones</class>
          <class>Mobile Messenger</class>
       </classes>
+
+
       <customSections>
          <section>
-            <name>Interests</name>
+            <name>Interested areas</name>
             <items>
-               <item>multimedia transmission</item>
-               <item>Cognitive radio</item>
-               <item>multimedia transmission</item>
+               <item>Multimedia transmission</item>
+               <item>Cognitive Radio</item>
+               <item>Multimedia transmission</item>
             </items>
          </section>
       </customSections>

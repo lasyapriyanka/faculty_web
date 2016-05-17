@@ -5,6 +5,7 @@ $id = (int) $_GET['id'];
     $xml = simplexml_load_file($file);  
 
     $xmlFormat = $xml->asXML();
+    //header("Location: http://localhost/template4.php?id=0&p=1");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,12 +19,13 @@ $id = (int) $_GET['id'];
 
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="jumbotronnarrow.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="jumbotronnarrow.css">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-<style type="text/css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <!--styling -->
+    <style type="text/css">
       
       body 
     {
@@ -77,73 +79,77 @@ $id = (int) $_GET['id'];
     
     .contactbox {  border: 2px solid grey; }
       
-      </style>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    </style>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
+    <!--main page -->
+    </head>
 
-  <body>
-<div class="container">
+    <body>
+    <div class="container">
     <div >
-<div class="row">
+    <div class="row">
               
-       <div id="header">
-		<p class="text-left orange"><h2 class="orange"><?php echo $xml->faculty[$id]->fullname; ?></h2></p>
+    <div id="header">
+	  <p class="text-left orange"><h2 class="orange"><?php echo $xml->faculty[$id]->fullname; ?></h2></p>
 		<p class="text-left orange" style="margin-left: 20px;"><?php echo $xml->faculty[$id]->position; ?><br/><?php echo $xml->faculty[$id]->university; ?></p>
-	</div>
+	  </div>
     
-	<div id="navigation">
+	  <div id="navigation">
 		<ul class="list-inline">
-            <li class="orangeNav noborder">  </li>
-			<li class="orangeNav"><a class="orange"href="<?php echo $_SERVER['PHP_SELF'] . "?id=".$id ."&p=1"?>">Home</a></li>
-                        <li class="orangeNav"><a class="orange" href="<?php echo $_SERVER['PHP_SELF'] . "?id=".$id ."&p=2"?>">Experience</a>
-                        <ul>
-<li><a href="programmes.html">Programmes</a></li>
-<li><a href="curriculum.html">Curriculum</a></li>
-<li><a href="time_table.html">Time Table</a></li>
-</ul>
-</li>
-                        <li class="orangeNav"><a class="orange"href="<?php echo $_SERVER['PHP_SELF'] . "?id=".$id ."&p=3"?>">Research Projects</a></li>
-                        
-                        <li class="orangeNav"><a class="orange"href="<?php echo $_SERVER['PHP_SELF'] . "?id=".$id ."&p=4"?>">Collaborators</a></li>
-                        <li class="orangeNav"><a class="orange"href="<?php echo $_SERVER['PHP_SELF'] . "?id=".$id ."&p=5"?>">Publications</a></li>
-                        <li class="orangeNav"><a class="orange"href="<?php echo $_SERVER['PHP_SELF'] . "?id=".$id ."&p=5"?>">Students</a></li>
+          <li class="orangeNav noborder">  </li>
+			    <li class="orangeNav"><a class="orange"href="<?php echo $_SERVER['PHP_SELF'] . "?id=".$id ."&p=1"?>">Home</a></li>
+          <li class="orangeNav"><a class="orange" href="<?php echo $_SERVER['PHP_SELF'] . "?id=".$id ."&p=2"?>">Experience</a></li>
+          <li class="orangeNav"><a class="orange"href="<?php echo $_SERVER['PHP_SELF'] . "?id=".$id ."&p=3"?>">Research Projects</a></li>
+          <li class="orangeNav"><a class="orange"href="<?php echo $_SERVER['PHP_SELF'] . "?id=".$id ."&p=4"?>">Collaborators</a></li>
+          <li class="orangeNav"><a class="orange"href="<?php echo $_SERVER['PHP_SELF'] . "?id=".$id ."&p=5"?>">Publications</a></li>
+          <li class="orangeNav"><a class="orange"href="<?php echo $_SERVER['PHP_SELF'] . "?id=".$id ."&p=6"?>">Students</a></li>
             
-       
-
-		</ul>
-	</div>
+    </ul>
+	  </div>
               
               
-</div> 
+    </div> 
         <!-- end row -->   
         
 
-</div>  <!-- end jumbotron -->
+    </div>  <!-- end jumbotron -->
     
-<div class="row">
-    <?php if ($_GET['p']==1) { ?>
+
+
+    <!-- HOME PAGE-->
+    
+
+    <div class="row">
+    
+    <?php 
+    
+    if ($_GET['p']==1) 
+    {
+    ?>
     <div class="col-xs-8"> 
         
-    <div class="col-xs-12"> <h4>Welcome</h4><?php echo $xml->faculty[$id]->welcome; ?><br/><br/>
-                </div>
+    <div class="col-xs-12"> <h4>PROFILE</h4>
+    <?php echo $xml->faculty[$id]->welcome; ?>
+    <br/><br/>
+    </div>
         
     <div class="col-xs-6 bg-warning contactbox"> <h4>Contact Information</h4>
         
-              
+          <!-- Contact Information -->    
               
             <address>
                 <strong>Office Location: </strong><br>
                     <?php echo $xml->faculty[$id]->officeLoc; ?>
                 <br/><br/>
-                <strong><abbr title="Phone">Phone:</abbr></strong> <?php echo $xml->faculty[$id]->phone; ?>
+                <strong><abbr title="Phone">Phone:</abbr></strong><?php echo $xml->faculty[$id]->phone; ?>
                 <br/>
                 <strong><abbr title="Office Hours">Office Hours:</abbr></strong><?php echo $xml->faculty[$id]->officeHrs; ?> 
                 <br/>
@@ -167,20 +173,20 @@ $id = (int) $_GET['id'];
     <div class="col-xs-6"> 
         
        <?php 
-                $researchSection = $xml->faculty[$id]->research->count(); 
+                $researchSection = $xml->faculty[$id]->news->count(); 
                 if ($researchSection != 0)
                 {
-                    $projectCount = $xml->faculty[$id]->research->project->count();
+                    $projectCount = $xml->faculty[$id]->news->project->count();
                     if ($projectCount != 0)
                     {
                     ?>
-                    <strong><h4>Research Projects</h4></strong>
+                    <strong><h4>News Room</h4></strong>
 
                   <ul>
                       <?php 
                         for ($i=0; $i < $projectCount; $i++)
                         {  ?>
-                        <li><?php echo $xml->faculty[$id]->research->project[$i]; ?></li>
+                        <li><?php echo $xml->faculty[$id]->news->project[$i]; ?></li>
                         <br/>
                         <?php 
                         } ?>
@@ -243,10 +249,11 @@ $id = (int) $_GET['id'];
       
     <?php } //end of page 1 
       
+//<!-- experience -->
 
-         if ($_GET['p']==2) { ?>
+    if ($_GET['p']==2) { ?>
       
-      <div class="col-xs-12 bg-success">
+    <div class="col-xs-12 bg-success">
           
     <?php 
                 $educationSection = $xml->faculty[$id]->education->count(); 
@@ -256,6 +263,7 @@ $id = (int) $_GET['id'];
                 {
                     
                     $credentialCount = $xml->faculty[$id]->education->credential->count();
+                    
                     if ($credentialCount !=0){
                     ?>
                     <strong><h4>Education and Professional Associations</h4></strong>
@@ -281,13 +289,15 @@ $id = (int) $_GET['id'];
 
 
 
+    //research projects
+
+    if ($_GET['p']==3) { ?>
       
-       if ($_GET['p']==3) { ?>
-      
-      <div class="col-xs-12 bg-success">
+    <div class="col-xs-12 bg-success">
           
          <?php 
                 $researchSection = $xml->faculty[$id]->research->count(); 
+    
                 if ($researchSection != 0)
                 {
                     $projectCount = $xml->faculty[$id]->research->project->count();
@@ -312,10 +322,11 @@ $id = (int) $_GET['id'];
       
 
             
+    //collaborators
+    if ($_GET['p']==4) { ?>
       
-      if ($_GET['p']==4) { ?>
-      
-      <div class="col-xs-12 bg-success">
+    <div class="col-xs-12 bg-success">
+    
           <?php 
        if (($xml->faculty[$id]->collaboration->count() !=0))
                 {
@@ -430,10 +441,11 @@ $id = (int) $_GET['id'];
     <?php }  //end of page 4 - collaborators
 
 
+//publications
 
-             if ($_GET['p']==5) { ?>
+    if ($_GET['p']==5) { ?>
     
-      <div class="col-xs-12 bg-success">
+    <div class="col-xs-12 bg-success">
           
            <?php 
                 $publicationSection = $xml->faculty[$id]->publications->count(); 
@@ -462,11 +474,243 @@ $id = (int) $_GET['id'];
       
     <?php }  //end of page 5 publications
 
+   // students
+
+    if ($_GET['p']==6) { ?>
+      
+      <div class="col-xs-12 bg-success">
+          
+<!-- Ph.D <DCU) -->
+       
+      <?php 
 
 
+       if (($xml->faculty[$id]->student->count() !=0))
+                {
+                 if ($xml->faculty[$id]->student->section->count()!=0)
+                 {
+                     $sectionCount = $xml->faculty[$id]->student->section->count();
+                    for ($i=0; $i<$sectionCount; $i++) //for each section that exists
+                    {
+                        if ($xml->faculty[$id]->student->section[$i]->items->item->count()!=0)
+                        {
+                            
+                            $itemCount = $xml->faculty[$id]->student->section[$i]->items->item->count();
+                            
+                             ?>
+                                <p><strong><?php echo $xml->faculty[$id]->student->section[$i]->name; ?></strong></p>
+                                <ul>
+                            <?php
+                            
+                                for ($q=0; $q<$itemCount; $q++)
+                                        {
+                                    
+                                           ?><li><?php echo $xml->faculty[$id]->student->section[$i]->items->item[$q]; ?></li><br/><?php                
+                                       }
+                             ?>
+                                </ul>
+                            <?php
+                        }
+       
+                    }                
+                 }
+              }
+                    
+                ?>
+
+ <!-- Masters (DCU)-->               
       
       
-      ?>  
+ <?php 
+       if (($xml->faculty[$id]->student1->count() !=0))
+                {
+                 if ($xml->faculty[$id]->student1->section->count()!=0)
+                 {
+                     $sectionCount = $xml->faculty[$id]->student1->section->count();
+                    for ($i=0; $i<$sectionCount; $i++) //for each section that exists
+                    {
+                        if ($xml->faculty[$id]->student1->section[$i]->items->item->count()!=0)
+                        {
+                            
+                            $itemCount = $xml->faculty[$id]->student1->section[$i]->items->item->count();
+                            
+                             ?>
+                                <p><strong><?php echo $xml->faculty[$id]->student1->section[$i]->name; ?></strong></p>
+                                <ul>
+                            <?php
+                            
+                                for ($q=0; $q<$itemCount; $q++)
+                                        {
+                                    
+                                           ?><li><?php echo $xml->faculty[$id]->student1->section[$i]->items->item[$q]; ?></li><br/><?php                
+                                        }
+                            ?>
+                                </ul>
+                            <?php
+                        }
+       
+                    }                
+                 }
+              }
+                    
+                ?>
+
+<!--Internship Supervision (in DCU):-->
+
+ <?php 
+       if (($xml->faculty[$id]->student2->count() !=0))
+                {
+                 if ($xml->faculty[$id]->student2->section->count()!=0)
+                 {
+                     $sectionCount = $xml->faculty[$id]->student2->section->count();
+                    for ($i=0; $i<$sectionCount; $i++) //for each section that exists
+                    {
+                        if ($xml->faculty[$id]->student2->section[$i]->items->item->count()!=0)
+                        {
+                            
+                            $itemCount = $xml->faculty[$id]->student2->section[$i]->items->item->count();
+                            
+                             ?>
+                                <p><strong><?php echo $xml->faculty[$id]->student2->section[$i]->name; ?></strong></p>
+                                <ul>
+                            <?php
+                            
+                                for ($q=0; $q<$itemCount; $q++)
+                                        {
+                                    
+                                           ?><li><?php echo $xml->faculty[$id]->student2->section[$i]->items->item[$q]; ?></li><br/><?php                
+                                       }
+                            ?>
+                                </ul>
+                            <?php
+                        }
+       
+                    }                
+                  }
+               }
+                    
+                ?>
+
+<!--Final Year Under-Graduate Supervision (in DAIICT, India)-->      
+
+
+<?php 
+       if (($xml->faculty[$id]->student3->count() !=0))
+                {
+                 if ($xml->faculty[$id]->student3->section->count()!=0)
+                 {
+                     $sectionCount = $xml->faculty[$id]->student3->section->count();
+                    for ($i=0; $i<$sectionCount; $i++) //for each section that exists
+                    {
+                        if ($xml->faculty[$id]->student3->section[$i]->items->item->count()!=0)
+                        {
+                            
+                            $itemCount = $xml->faculty[$id]->student3->section[$i]->items->item->count();
+                            
+                             ?>
+                                <p><strong><?php echo $xml->faculty[$id]->student3->section[$i]->name; ?></strong></p>
+                                <ul>
+                            <?php
+                            
+                                for ($q=0; $q<$itemCount; $q++)
+                                        {
+                                    
+                                           ?><li><?php echo $xml->faculty[$id]->student3->section[$i]->items->item[$q]; ?></li><br/><?php                
+                                       }
+                            ?>
+                                </ul>
+                            <?php
+                        }
+       
+                    }                
+                  }
+                }
+                    
+                ?>
+<!--Internship Supervision (in DAIICT, India):-->
+      
+<?php 
+       if (($xml->faculty[$id]->student4->count() !=0))
+                {
+                 if ($xml->faculty[$id]->student4->section->count()!=0)
+                 {
+                     $sectionCount = $xml->faculty[$id]->student4->section->count();
+                    for ($i=0; $i<$sectionCount; $i++) //for each section that exists
+                    {
+                        if ($xml->faculty[$id]->student4->section[$i]->items->item->count()!=0)
+                        {
+                            
+                            $itemCount = $xml->faculty[$id]->student4->section[$i]->items->item->count();
+                            
+                             ?>
+                                <p><strong><?php echo $xml->faculty[$id]->student4->section[$i]->name; ?></strong></p>
+                                <ul>
+                            <?php
+                            
+                                for ($q=0; $q<$itemCount; $q++)
+                                        {
+                                    
+                                           ?><li><?php echo $xml->faculty[$id]->student4->section[$i]->items->item[$q]; ?></li><br/><?php                
+                                       }
+                            ?>
+                                </ul>
+                            <?php
+                        }
+       
+                    }                
+                  }
+                }
+                    
+                ?>
+
+<!--ndergraduate co supervision -->
+
+<?php 
+       if (($xml->faculty[$id]->student5->count() !=0))
+                {
+                 if ($xml->faculty[$id]->student5->section->count()!=0)
+                 {
+                     $sectionCount = $xml->faculty[$id]->student5->section->count();
+                    for ($i=0; $i<$sectionCount; $i++) //for each section that exists
+                    {
+                        if ($xml->faculty[$id]->student5->section[$i]->items->item->count()!=0)
+                        {
+                            
+                            $itemCount = $xml->faculty[$id]->student5->section[$i]->items->item->count();
+                            
+                             ?>
+                                <p><strong><?php echo $xml->faculty[$id]->student5->section[$i]->name; ?></strong></p>
+                                <ul>
+                            <?php
+                            
+                                for ($q=0; $q<$itemCount; $q++)
+                                        {
+                                    
+                                           ?><li><?php echo $xml->faculty[$id]->student5->section[$i]->items->item[$q]; ?></li><br/><?php                
+                                       }
+                            ?>
+                                </ul>
+                            <?php
+                        }
+       
+                    }                
+                  }
+                }
+                    
+                ?>
+
+          
+
+
+
+
+
+  </div>
+      
+  <?php }
+      
+      
+  ?>  
       
       
       

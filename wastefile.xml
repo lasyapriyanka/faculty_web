@@ -1,0 +1,147 @@
+
+
+
+
+
+
+
+
+<?php 
+       if (($xml->faculty[$id]->student2->count() !=0))
+                {
+                 if ($xml->faculty[$id]->student2->section->count()!=0)
+                 {
+                     $sectionCount = $xml->faculty[$id]->student2->section->count();
+                    for ($i=0; $i<$sectionCount; $i++) //for each section that exists
+                    {
+                        if ($xml->faculty[$id]->student2->section[$i]->item2->item->count()!=0)
+                        {
+                            
+                            $itemCount = $xml->faculty[$id]->student2->section[$i]->items->item->count();
+                            
+                             ?>
+                                <p><strong><?php echo $xml->faculty[$id]->student2->section[$i]->name; ?></strong></p>
+                                <ul>
+                            <?php
+                            
+                                for ($q=0; $q<$itemCount; $q++)
+                                        {
+                                    
+                                           ?><li><?php echo $xml->faculty[$id]->student2->section[$i]->items->item[$q]; ?></li><br/><?php                
+                                       }
+                            ?>
+                                </ul>
+                            <?php
+                        }
+       
+                    }                
+                 }
+       }
+                    
+                ?>
+
+<?php 
+       if (($xml->faculty[$id]->student3->count() !=0))
+                {
+                 if ($xml->faculty[$id]->student3->section->count()!=0)
+                 {
+                     $sectionCount = $xml->faculty[$id]->student3->section->count();
+                    for ($i=0; $i<$sectionCount; $i++) //for each section that exists
+                    {
+                        if ($xml->faculty[$id]->student3->section[$i]->item2->item->count()!=0)
+                        {
+                            
+                            $itemCount = $xml->faculty[$id]->student3->section[$i]->items->item->count();
+                            
+                             ?>
+                                <p><strong><?php echo $xml->faculty[$id]->student3->section[$i]->name; ?></strong></p>
+                                <ul>
+                            <?php
+                            
+                                for ($q=0; $q<$itemCount; $q++)
+                                        {
+                                    
+                                           ?><li><?php echo $xml->faculty[$id]->student3->section[$i]->items->item[$q]; ?></li><br/><?php                
+                                       }
+                            ?>
+                                </ul>
+                            <?php
+                        }
+       
+                    }                
+                 }
+       }
+                    
+                ?>
+
+
+<?php 
+       if (($xml->faculty[$id]->student4->count() !=0))
+                {
+                 if ($xml->faculty[$id]->student4->section->count()!=0)
+                 {
+                     $sectionCount = $xml->faculty[$id]->student4->section->count();
+                    for ($i=0; $i<$sectionCount; $i++) //for each section that exists
+                    {
+                        if ($xml->faculty[$id]->student4->section[$i]->item2->item->count()!=0)
+                        {
+                            
+                            $itemCount = $xml->faculty[$id]->student4->section[$i]->items->item->count();
+                            
+                             ?>
+                                <p><strong><?php echo $xml->faculty[$id]->student4->section[$i]->name; ?></strong></p>
+                                <ul>
+                            <?php
+                            
+                                for ($q=0; $q<$itemCount; $q++)
+                                        {
+                                    
+                                           ?><li><?php echo $xml->faculty[$id]->student4->section[$i]->items->item[$q]; ?></li><br/><?php                
+                                       }
+                            ?>
+                                </ul>
+                            <?php
+                        }
+       
+                    }                
+                 }
+       }
+                    
+                ?>
+
+
+
+
+<?php 
+       if (($xml->faculty[$id]->student5->count() !=0))
+                {
+                 if ($xml->faculty[$id]->student5->section->count()!=0)
+                 {
+                     $sectionCount = $xml->faculty[$id]->student5->section->count();
+                    for ($i=0; $i<$sectionCount; $i++) //for each section that exists
+                    {
+                        if ($xml->faculty[$id]->student5->section[$i]->item2->item->count()!=0)
+                        {
+                            
+                            $itemCount = $xml->faculty[$id]->student5->section[$i]->items->item->count();
+                            
+                             ?>
+                                <p><strong><?php echo $xml->faculty[$id]->student5->section[$i]->name; ?></strong></p>
+                                <ul>
+                            <?php
+                            
+                                for ($q=0; $q<$itemCount; $q++)
+                                        {
+                                    
+                                           ?><li><?php echo $xml->faculty[$id]->student5->section[$i]->items->item[$q]; ?></li><br/><?php                
+                                       }
+                            ?>
+                                </ul>
+                            <?php
+                        }
+       
+                    }                
+                 }
+       }
+                    
+                ?>
